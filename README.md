@@ -1,64 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Asset Management System
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Deskripsi
+Asset Management System adalah aplikasi manajemen aset yang dibangun menggunakan Laravel 8 sebagai backend, MySQL sebagai basis data, dan jQuery untuk interaksi antarmuka pengguna. Aplikasi ini dirancang untuk membantu perusahaan dalam mengelola aset mereka, termasuk informasi master data, aset, transaksi, dan laporan.
 
-## About Laravel
+## Fitur
+### Master Data
+1. **Karyawan:** Pengelolaan informasi karyawan termasuk data pribadi, jabatan, dan informasi kontak.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/6cd50586-2bba-4e0e-a0ea-a5366fd7c1cd)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+2. **Regional:** Penyimpanan data regional yang digunakan dalam konteks perusahaan.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/25108f40-ed6c-4405-b08a-b943ca4070ac)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+3. **Perusahaan:** Manajemen data perusahaan termasuk informasi kontak dan alamat.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/d1060c27-7454-4418-8f7b-eba00ba9e33a)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+4. **Divisi:** Penyimpanan informasi tentang divisi atau departemen dalam perusahaan.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/27b16497-38d6-4421-bb2f-625771751b6a)
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Aset
+1. **Kategori:** Pengelompokan aset berdasarkan kategori tertentu untuk memudahkan manajemen dan pencarian.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/7502535e-5e07-4d34-82cf-c8e90b7bc11d)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. **Supplier:** Manajemen informasi tentang pemasok atau supplier aset.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/5d849ad0-ca1e-43fa-bf76-5f2e55a124a1)
 
-## Laravel Sponsors
+3. **Aset:** Penyimpanan informasi rinci tentang aset, termasuk data spesifikasi dan status.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/261cf444-4a75-4a7a-b5c7-9bfad53301c5)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Transaksi
+1. **Tambah Transaksi In/Out:** Pengguna dapat melakukan transaksi masuk (penerimaan aset) atau keluar (pemindahan atau pengembalian aset).
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/b242618e-526d-48b1-83c3-5b92b412917a)
 
-### Premium Partners
+2. **Daftar Transaksi:** Daftar riwayat transaksi termasuk informasi aset yang terlibat, tanggal transaksi, dan keterangan.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/43878e92-77a9-4091-b2f0-617515e997db)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
+### Monitoring
+1. **Per Aset:** Monitoring tentang status dan riwayat transaksi untuk setiap aset.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/2d834793-616f-49c7-953a-aab29cae6447)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. **Per Karyawan:** Monitoring tentang aset yang dikelola oleh karyawan tertentu.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/9b94d371-9953-40e3-bf92-1204f7b7ea0e)
 
-## Code of Conduct
+3. **Per Perusahaan:** Monitoring tentang aset yang dimiliki oleh perusahaan dan riwayat transaksinya.
+![gambar](https://github.com/inotechno/asset-management-system/assets/151206616/37639029-4fc6-4217-a493-1c93e6bf6ccd)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+## Teknologi yang Digunakan
+- Laravel 8: Framework PHP yang kuat untuk pengembangan aplikasi web.
+- MySQL: Sistem manajemen basis data relasional untuk menyimpan data.
+- jQuery: Library JavaScript untuk membuat interaksi antarmuka pengguna yang dinamis.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Cara Penggunaan
+1. Pastikan PHP dan MySQL telah terpasang di komputer lokal Anda.
+2. Clone repositori ini ke komputer Anda.
+3. Konfigurasikan koneksi basis data MySQL di file `.env`.
+4. Jalankan `composer install` untuk menginstal dependensi PHP.
+5. Jalankan `php artisan migrate` untuk membuat tabel-tabel yang diperlukan di dalam basis data.
+6. Buka aplikasi di browser Anda dan mulailah mengelola aset perusahaan Anda!
 
-## License
+## Kontribusi
+Kami mengundang kontribusi dalam bentuk laporan bug, permintaan fitur, atau pengembangan lebih lanjut. Silakan berkontribusi untuk membuat Asset Management System lebih baik!
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Terima kasih
